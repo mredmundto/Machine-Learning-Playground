@@ -72,5 +72,5 @@ probabilities = model.predict_proba(test[["gpa"]])
 
 # Means we can just use roc_auc_curve() instead of metrics.roc_auc_curve()
 auc_score = roc_auc_score(test["actual_label"], probabilities[:,1])
-print('This is the area under curve ')
+print('This is the area under curve')
 print(auc_score)
